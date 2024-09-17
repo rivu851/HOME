@@ -1,0 +1,260 @@
+/* Basic Reset */
+body, html, ul {
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+#form {
+    display: flex;
+}
+
+#query {
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+button {
+    box-shadow: #333;
+    padding: 0.5em 1em;
+    border: none;
+    background-color: #ff5e57;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+button:hover {
+    background-color: #ff1e00;
+}
+
+/* Home Section Styling */
+#home {
+    position: relative;
+    text-align: center;
+    color: rgb(31, 29, 29);
+    height: 90vh; 
+}
+
+#home img {
+    width: 100%;
+    height: 100vh; 
+    object-fit: cover; 
+    opacity: 0.7; 
+}
+
+/* Text and Button Overlay */
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); 
+}
+
+.text-overlay h1 {
+    font-size: 3em; 
+    font-weight: bold; 
+    margin-bottom: 0.5em; 
+}
+
+.text-overlay p {
+    font-size: 1.2em; 
+    margin-bottom: 1em; 
+    line-height: 1.4;
+}
+
+.text-overlay .cta-button {
+    background-color: #ff5e57;
+    color: white;
+    padding: 1em 2em; 
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em; 
+    transition: background-color 0.3s, transform 0.3s; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+}
+
+.text-overlay .cta-button:hover {
+    background-color: #ff1e00;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: 90vh; 
+    overflow: hidden;
+}
+
+/* Slide Animation */
+.mySlides {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; 
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.mySlides.show {
+    opacity: 1;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 2s ease;
+    border-radius: 0 2px 2px 0;
+    user-select: none;
+    z-index: 2;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Destinations Section */
+#destinations {
+    padding: 3em 3em;
+    background: #131212;
+    text-align: center;
+}
+
+.destination-grid {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    flex-wrap: wrap;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 350px;
+    transition: transform 0.3s;
+    perspective: 1000px;
+    cursor: pointer;
+    height: 350px;
+}
+
+.destination-card:hover {
+    transform: rotateY(10deg) scale(1.05);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 62%;
+    object-fit: fill;
+}
+
+.destination-card h3 {
+    margin: 0.5em 0;
+    color: #333;
+}
+
+.destination-card p {
+    padding: 0 1em 1em;
+    color: #666;
+}
+
+/* About Section */
+#about {
+    padding: 2em 1em;
+    background: #333;
+    color: white;
+    text-align: center;
+}
+
+#about h2, #contact h2 {
+    margin-bottom: 0.5em;
+}
+
+/* Contact Section */
+#contact {
+    padding: 1em .5em;
+    background: #f0f0f0;
+    text-align: center;
+    justify-content: center;
+    height: auto;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
